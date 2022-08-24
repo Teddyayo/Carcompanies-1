@@ -32,7 +32,6 @@ return (<div className="card-container">
             onClick={ ()=> props.Like(car.index)} class="btn btn-success btn-b"
             >
             Like
-            
             </button>
             
           )}
@@ -53,12 +52,19 @@ return (<div className="card-container">
             
             <small class="int">{car.likes} Likes  {car.dislikes} Dislikes </small>
           )}
+
           
-          {props.userWallet !== car.owner && (
-            <button type="button" class="btn btn-primary mt-2" 
-            onClick={ ()=> props.buyCar(car.index)}></button>
-            
-          )}
+{ props.walletAddress === car.owner &&(
+                  <form>
+                  <div class="form-r">
+                      <input type="text" class="form-control mt-4" value={ammount}
+                           onChange={(e) => setAmmount(e.target.value)} placeholder="enter ammount"/>
+                      <button type="button" onClick={()=>props.addmoreCars(car.index, ammount)} class="btn btn-outline-info mt-2">add more tickets</button>
+                      
+                  </div>
+                </form>
+                
+                       )}
         
           <form>
       <div class="form-r">

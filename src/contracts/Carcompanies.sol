@@ -43,7 +43,7 @@ contract Carcompanies {
         uint numberOfreview;
     }
 
-    mapping(uint256=> Car) internal cars;
+    mapping (uint256=> Car) internal cars;
     mapping (uint => Review[]) internal reviewsMap;// mapping reviews
 
 
@@ -130,8 +130,8 @@ function buyCar(uint _index) public payable  {
     }
 
     //acquiring length of cars
-    function getCarLength() public view returns(uint){
-        return carLength;
+    function getCarLength() public view returns (uint){
+        return (carLength);
     }
 
     // acquiring length of reviews 
