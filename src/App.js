@@ -18,7 +18,7 @@ import { Cars } from './components/Cars';
 const ERC20_DECIMALS = 18;
 
 
-const contractAddress = "0xB68D376CdB9b3007cca697C3FbB92C39dBa3aFB7";
+const contractAddress = "0x92bEcCcD3075974fBFA7d6c1A9449E586Ee94c4b";
 const cUSDContractAddress = "0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1";
 
 
