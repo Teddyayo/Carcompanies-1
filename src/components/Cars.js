@@ -29,7 +29,7 @@ return (<div className="card-container">
 
           {props.userWallet !== car.owner && (
             <button
-            onClick={ ()=> props.Like(car.index)} class="btn btn-success btn-b"
+            onClick={ ()=> props.likeCar(car.index)} class="btn btn-success btn-b"
             >
             Like
             </button>
@@ -40,7 +40,7 @@ return (<div className="card-container">
     {props.userWallet !== car.owner && (
                     
             <button
-            onClick={ ()=> props.Dislike(car.index)} class="btn btn-dark btn-b"
+            onClick={ ()=> props.dislikeCar(car.index)} class="btn btn-dark btn-b"
             >
             Dislike
             </button>
