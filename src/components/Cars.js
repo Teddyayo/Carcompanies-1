@@ -27,31 +27,23 @@ return (<div className="card-container">
           <h2>Car Price: {car.price / 1000000000000000000} cUSD</h2>
          
          
-          {props.userWallet !== car.owner && (
-            <button
-            onClick={ ()=> props.Like(car.index)} class="btn btn-success btn-b"
-            >
-            Like
-            </button>
-            
-          )}
-    
+          <div className="d-flex justify-content-between">
+                  <div
+                      style={{ cursor: "grab" }}
+                      onClick={() => likesCar(car.index)}
+                    >
+                      <i class="bi bi-hand-thumbs-up"></i>
+                      <p>{car.likes} Likes</p>
+                    </div>
+                    <div
+                      style={{ cursor: "grab" }}
+                      onClick={() => dislikesCar(car.index)}
+                    >
+                      <i class="bi bi-hand-thumbs-down"></i>
+                      <p>{car.dislikes} Dislikes</p>
+                  </div>
+      </div>        
           
-    {props.userWallet !== car.owner && (
-                    
-            <button
-            onClick={ ()=> props.Dislike(car.index)} class="btn btn-dark btn-b"
-            >
-            Dislike
-            </button>
-    
-          )}
-
-
-{props.userWallet !== car.owner && (
-            
-            <small class="int">{car.likes} Likes  {car.dislikes} Dislikes </small>
-          )}
 
           
 { props.walletAddress === car.owner &&(
