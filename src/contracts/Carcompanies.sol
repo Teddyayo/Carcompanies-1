@@ -100,12 +100,12 @@ contract Carcompanies {
     }
 
     // like the car
-    function likesCar(uint index)public{
+    function likeCar(uint index)public{
         cars[index].likes++;
     }
 
     // leave a dislike for the car
-    function dislikesCar(uint index)public{
+    function dislikeCar(uint index)public{
         cars[index].dislikes++;
     }
 
@@ -135,7 +135,7 @@ function buyCar(uint _index) public payable  {
     }
 
     // acquiring length of reviews 
-    function getreviewsLength(uint _index) public view returns (uint) {
+    function getReviewsLength(uint _index) public view returns (uint) {
         return reviewsMap[_index].length;
     }
 } 

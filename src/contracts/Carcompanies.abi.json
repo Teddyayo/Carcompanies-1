@@ -71,7 +71,7 @@
 				"type": "uint256"
 			}
 		],
-		"name": "dislikesCar",
+		"name": "dislikeCar",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -178,7 +178,7 @@
 				"type": "uint256"
 			}
 		],
-		"name": "getreviewsLength",
+		"name": "getReviewsLength",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -197,7 +197,7 @@
 				"type": "uint256"
 			}
 		],
-		"name": "likesCar",
+		"name": "likeCar",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
