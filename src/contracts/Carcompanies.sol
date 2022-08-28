@@ -100,17 +100,20 @@ contract Carcompanies {
     }
 
     // like the car
-    function likeCar(uint index)public{
-        cars[index].likes++;
+    function likeCar(uint _index)public{
+        require(cars[_index].owner != msg.sender);
+        cars[_index].likes++;
     }
 
     // leave a dislike for the car
-    function dislikeCar(uint index)public{
-        cars[index].dislikes++;
+    function dislikeCar(uint _index)public{
+         require(cars[_index].owner != msg.sender);
+        cars[_index].dislikes++;
     }
 
        // add a revie to a book
    function addReview(uint _index, string memory _reviews) public{
+     require(cars[_index].owner != msg.sender);
     reviewsMap[_index].push(Review(_index, address(msg.sender), _reviews));
     cars[_index].numberOfreview++;
   }

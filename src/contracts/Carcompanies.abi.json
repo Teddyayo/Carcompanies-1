@@ -67,7 +67,7 @@
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "index",
+				"name": "_index",
 				"type": "uint256"
 			}
 		],
@@ -193,7 +193,7 @@
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "index",
+				"name": "_index",
 				"type": "uint256"
 			}
 		],
